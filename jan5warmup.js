@@ -8,18 +8,66 @@
 // npm install mocha chai --save
 "use strict";
 
-module.exports = {
+// module.exports = {
+//
+//
+//
+//   targetSumIndex(array, integer){
+//     var i;
+//     var j;
+//     var index1;
+//     var index2;
+//     var array =[];
+//
+//     if(!Array.isArray(array)|| !Number.isInteger(integer)){
+//       return ("invalid argument type");
+//     }
+//
+//     for (i=0; i<array.length; i++){
+//       index1 = array[i];
+//       console.log(array);
+//       for (j=0; j<array.length; j++){
+//         if(index1 + array[j] === integer){
+//           array.push(index1);
+//           array.push(array[j]);
+//           return array;
+//         }
+//       }
+//     }
+//
+//   }
+//
+//
+//
+//
+// };
+console.log("hello");
 
-  targetSumIndex(){
+function targetSumIndex(array, integer){
+  var i;
+  var j;
+  var index1;
+  var index2;
+  var indexArray =[];
+
+  if(!Array.isArray(array)|| !Number.isInteger(integer)){
     return ("invalid argument type");
+  } else {
 
+
+
+  for (i=0; i<array.length; i++){
+    index1 = array[i];
+    console.log(array[i]);
+    for (j=0; j<array.length; j++){
+      if(index1 + array[j] === integer){
+        indexArray.push(index1);
+        indexArray.push(array[j]);
+        return indexArray;
+      }
+    }
+    }
   }
+}
 
-
-};
-
-  function targetSumIndex(array, integer){
-    //if(array.type !== array || integer.type !== integer){
-      return ("invalid argument type");
-    //}
-  }
+console.log(targetSumIndex([1,2,3], 3));
