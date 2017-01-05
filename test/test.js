@@ -19,5 +19,11 @@ describe("targetSumIndex", () => {
     expect(code.targetSumIndex([1,2,5], 7)).to.eql([1,2]);
     expect(code.targetSumIndex([1, 2, 3, 4, 5, 6, 7], 13)).to.eql([5,6]);
   });
+  it("Should return no match if there isn't a match in the array given", () => {
+    expect(code.targetSumIndex([1,1], 4)).to.equal("No match, try again");
+    expect(code.targetSumIndex([1,1,1], 3)).to.equal("No match, try again");
+    expect(code.targetSumIndex([0,1,2], 4)).to.equal("No match, try again");
+    expect(code.targetSumIndex([0,1,2,3,4], 8)).to.equal("No match, try again");
+  });
 
 });

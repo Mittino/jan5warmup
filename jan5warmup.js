@@ -26,13 +26,14 @@
       for (i=0; i<array.length; i++){
         index1 = i;
         for (j=0; j<array.length; j++){
-          if(array[i] + array[j] === integer){
+          if(i !== j && array[i] + array[j] === integer){
             indexArray.push(index1);
             indexArray.push(j);
             return indexArray;
           }
         }
       }
+    return "No match, try again";
     }
   }
 })();
