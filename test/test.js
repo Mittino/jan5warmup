@@ -14,9 +14,10 @@ describe("targetSumIndex", () => {
     expect(code.targetSumIndex([], {})).to.equal("invalid argument type");
   });
 
-  it("Should return an array with two index numbers that sum to equal the second argument", () => {
-    expect(code.targetSumIndex([1,2,3,4], 4)).to.equal([0,2]);
-    expect(code.targetSumIndex([1,2,5], 7)).to.equal([1,2]);
+  it("Should return an array with two index numbers with values that sum to equal the second argument", () => {
+    expect(code.targetSumIndex([1,2,3,4], 4)).to.eql([0,2]);
+    expect(code.targetSumIndex([1,2,5], 7)).to.eql([1,2]);
+    expect(code.targetSumIndex([1, 2, 3, 4, 5, 6, 7], 13)).to.eql([5,6]);
   });
 
 });
