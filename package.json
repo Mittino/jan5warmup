@@ -1,0 +1,19 @@
+{
+  "name": "jan5warmup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "jan5warmup.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  }
+}
