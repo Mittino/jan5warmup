@@ -37,7 +37,3 @@
     }
   }
 })();
-
-// console.log(targetSumIndex([1,2,3], 3));
-// console.log(targetSumIndex([1,2,3], 5));
-// console.log(targetSumIndex([1, 2, 3, 4, 5, 6, 7], 13));
